@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>kinova_description</name>
+  <version>2.0.0</version>
+  <description>
+      3D model of various Kinova robotic arms, ported to ROS2.
+      Includes the model and URDF files for working with an arm in RViz or Gazebo.
+  </description>
+  <maintainer email="aorsul16@student.aau.dk">Andrej Orsula</maintainer>
+  <author>Kinova ROS Support</author>
+  <author>Andrej Orsula</author>
+  <author>Asger Printz Madsen</author>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
