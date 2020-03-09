@@ -14,7 +14,7 @@ from launch.substitutions import ThisLaunchFileDir
 def generate_launch_description():
     # Path to xacro defining Gazebo model
     xacro_path = os.path.join(get_package_share_directory(
-        'omtp_lecture1'), 'urdf', 'TODO.xacro')
+        'omtp_lecture1'), 'urdf', 'omtp_factory_modified.xacro')
 
     # Convert xacro to urdf
     # Note: Using this ugly hack because xacro cannot be run as a ROS2 Node (explanation below)
