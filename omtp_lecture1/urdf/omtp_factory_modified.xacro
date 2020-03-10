@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
-<robot name="omtp" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="omtp" 
+  xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- world -->
   <link name="world" />
@@ -34,9 +35,9 @@
 
   <!-- robot1 to pedestal. -->
   <joint name="robot1_to_pedestal" type="fixed">
-  <origin xyz="0 0 0.95" rpy="0 0 0" />
-  <parent link="robot1_pedestal_link" />
-  <child link="robot1_base_link" />
+    <origin xyz="0 0 0.95" rpy="0 0 0" />
+    <parent link="robot1_pedestal_link" />
+    <child link="robot1_base_link" />
   </joint>
 
   <!-- gripper1 to robot1. -->
@@ -52,6 +53,7 @@
     <origin xyz="-8 -1 0.0" rpy="0 0 0" />
   </joint>
 
+  <!-- RANDOM GEOMETRY - SPHERE -->
   <!-- random sphere - link -->
   <xacro:property name="radius" value="0.5" />
   <link name="random_sphere">
@@ -67,7 +69,7 @@
     <collision>
       <origin xyz="0 0 0"/>
       <geometry>
-         <sphere radius="${radius}"/>
+        <sphere radius="${radius}"/>
       </geometry>
     </collision>
     <inertial>
@@ -87,6 +89,10 @@
     <origin xyz="0.6 0.9 4.20" rpy="0 0 0" />
   </joint>
 
+  <!-- ROBOT2 - UR5 -->
+  <!-- Robot2 -->
+  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro"/>
+  <xacro:ur5_robot prefix="robot2_" joint_limited="true"/>
 
   <!-- Robot2 Pedestal -->
   <xacro:include filename="$(find omtp_support)/urdf/robot_pedestal/robot_pedestal.urdf.xacro"/>
@@ -94,19 +100,15 @@
     <origin xyz="2 1.8 0.0" rpy="0 0 ${radians(180)}"/>
   </xacro:robot_pedestal_urdf>
 
-  <!-- Robot2 -->
-  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro"/>
-  <xacro:ur5_robot prefix="robot2_" joint_limited="true"/>
-
   <!-- Vacuum Gripper2 -->
   <xacro:include filename="$(find omtp_support)/urdf/vacuum_gripper/vacuum_gripper.urdf.xacro"/>
   <xacro:vacuum_gripper_urdf prefix="vacuum_gripper2_" joint_prefix="vacuum_gripper2_joint"/>
 
   <!-- robot2 to pedestal. -->
   <joint name="robot2_to_pedestal" type="fixed">
-  <origin xyz="0 0 0.95" rpy="0 0 0" />
-  <parent link="robot2_pedestal_link" />
-  <child link="robot2_base_link" />
+    <origin xyz="0 0 0.95" rpy="0 0 0" />
+    <parent link="robot2_pedestal_link" />
+    <child link="robot2_base_link" />
   </joint>
 
   <!-- gripper2 to robot2. -->
@@ -115,37 +117,48 @@
     <child link="vacuum_gripper2_base_link" />
   </joint>
 
+  <!-- ROBOT3 - JACO -->
+  <!-- Robot3 -->
+  <xacro:include filename="$(find kinova_description)/urdf/j2s6s300.xacro"/>
+  <xacro:j2s6s300 base_parent="robot3_pedestal" prefix="robot3_"/>
 
   <!-- Robot 3 base - link -->
   <link name="robot3_pedestal">
     <visual>
-      <origin xyz="0 0 0.1"/>
+      <origin xyz="0 0 -0.1"/>
       <geometry>
         <cylinder radius="0.05" length="0.5"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0 0 0.1"/>
+      <origin xyz="0 0 -0.1"/>
       <geometry>
-         <cylinder radius="0.05" length="0.5"/>
+        <cylinder radius="0.05" length="0.5"/>
       </geometry>
     </collision>
     <inertial>
       <mass value="1"/>
-      <origin xyz="0 0 0.1"/>
+      <origin xyz="0 0 -0.1"/>
       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
   </link>
 
-  <!-- random sphere - joint -->
-  <joint name="robot3_pedestal_joint" type="fixed">
+  <!-- robot3 - joint -->
+  <joint name="robot3_to_world" type="fixed">
     <parent link="world_interface" />
     <child link="robot3_pedestal" />
-    <origin xyz="0.5 -7.5 0.6" rpy="0 0 0" />
+    <origin xyz="-4 -5 0.4" rpy="0 0 0" />
   </joint>
 
-  <!-- Robot3 -->
-  <xacro:include filename="$(find kinova_description)/urdf/j2s6s300.xacro"/>
-  <xacro:j2s6s300 base_parent="robot3_pedestal" prefix="robot3_"/>
+  <!-- ROBOT 4 - ABB -->
+  <!-- Robot4 -->
+  <xacro:include filename="$(find abb_irb6640_support)/urdf/irb6640_185_280_macro.xacro"/>
+  <xacro:abb_irb6640_185_280 prefix="robot4_"/>
 
+  <!-- robot4 to pedestal. -->
+  <joint name="robot4_to_world" type="fixed">
+    <origin xyz="0 -7.5 0" rpy="0 0 ${radians(90)}" />
+    <parent link="world_interface" />
+    <child link="robot4_base_link" />
+  </joint>
 </robot>

@@ -27,6 +27,7 @@ def generate_launch_description():
         # Path needs to be static otherwise `spawn_entity.py` return an error about not recognizing `--ros-args`
         Node(package='gazebo_ros',
              node_executable='spawn_entity.py',
-             arguments=['-entity', 'r2d2', '-file', '/TODO/path/to/urdf_tutorial/urdf/r2d2.urdf'],
+             arguments=['-entity', 'r2d2', '-file',
+                        '/TODO/path/to/urdf_tutorial/urdf/r2d2.urdf'],
              output='screen'),
     ])
