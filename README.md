@@ -42,7 +42,7 @@ sudo apt-get install -y ros-eloquent-xacro
 
 ### Building
 ```bash
-git clone https://github.com/AndrejOrsula/omtp_course -b master && cd omtp_course
+git clone https://github.com/AndrejOrsula/omtp_course -b ros2 && cd omtp_course
 source /opt/ros/eloquent/setup.bash
 colcon build --symlink-install
 ```
