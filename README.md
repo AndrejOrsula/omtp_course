@@ -1,8 +1,9 @@
 # ROB866 - OMTP
 ![OS](https://img.shields.io/badge/OS-Ubuntu_18.04-orange.svg) ![ROS_2](https://img.shields.io/badge/ROS_2-Eloquent-brightgreen.svg) ![GAZEBO](https://img.shields.io/badge/Gazebo-9.12-lightgrey.svg)
 
-This repository contains assignment of group ROB866 for *Object Manipulation and Task Planning (Robotics 8)* course at *Aalborg University*, *Denmark*.
+**Note: This branch is discontinued due to missing MoveIt 2 functionalities that are not yet migrated as of April 2020, see [MoveIt 2 Migration Progress](https://docs.google.com/spreadsheets/d/1aPb3hNP213iPHQIYgcnCYh9cGFUlZmi_06E_9iTSsOI/edit?usp=sharing).**
 
+This repository contains assignment of group ROB866 for *Object Manipulation and Task Planning (Robotics 8)* course at *Aalborg University*, *Denmark*.
 
 ## Description
 The repository itself contains assignments for the lectures/exercises structured as the following packages.
@@ -38,9 +39,6 @@ curl -sSL http://get.gazebosim.org | sh
 ```bash
 sudo apt-get install -y ros-eloquent-xacro
 ```
-
-#### 4) [MoveIt 2.0 Beta](https://github.com/ros-planning/moveit2)
-Feel free to follow the instructions or use the provided [installation script](scripts/install_ros2_moveit2.bash) (If desired, change the installation directory in the script).
 
 ### Building
 ```bash
