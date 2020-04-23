@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>omtp_lecture5</name>
+  <version>0.0.0</version>
+  <description>MoveIt basics assignment</description>
+  <maintainer email="aorsul16@student.aau.dk">Andrej Orsula</maintainer>
+  <author>Simon Bøgh</author>
+  <author>Andrej Orsula</author>
+  <author>Asger Printz Madsen</author>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>moveit_msgs</exec_depend>
+</package>

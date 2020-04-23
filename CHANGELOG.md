@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [X.X.X] - 202X-XX-XX
 
 
+## [1.0.0] - 2020-04-23
+### Changed - Breaking
+- Reverted back to ROS 1 Melodic due to missing MoveIt2 features that have not yet been migrated.
+- Ported assignment 1 to ROS 1
+### Added
+- Added resources for assignment 2
+
 ## [0.2.0] - 2020-03-10
 ### Added
 - `abb_irb6640_support` containing *URDF* description of *ABB IRB6640* compatible with ROS 2.

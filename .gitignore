@@ -1,11 +1,12 @@
-# Colcon
-**install/
-**log/
-**build/
+# Colcon + Catkin
+**/install
+**/log
+**/build
+**/devel
 
 # VScode
-*.code-workspace
-.vscode
+**/.code-workspace
+**/.vscode
 
 # Python
-**__pycache__/
+**/__pycache__

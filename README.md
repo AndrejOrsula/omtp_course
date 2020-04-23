@@ -1,71 +1,64 @@
 # ROB866 - OMTP
-![OS](https://img.shields.io/badge/OS-Ubuntu_18.04-orange.svg) ![ROS_2](https://img.shields.io/badge/ROS_2-Eloquent-brightgreen.svg) ![GAZEBO](https://img.shields.io/badge/Gazebo-9.12-lightgrey.svg)
+![OS](https://img.shields.io/badge/OS-Ubuntu_18.04-orange.svg) ![ROS_1](https://img.shields.io/badge/ROS_1-Melodic-blue.svg) ![GAZEBO](https://img.shields.io/badge/Gazebo-9.12-lightgrey.svg)
 
 This repository contains assignment of group ROB866 for *Object Manipulation and Task Planning (Robotics 8)* course at *Aalborg University*, *Denmark*.
 
 
-## Description
-The repository itself contains assignments for the lectures/exercises structured as the following packages.
-- [`omtp_lecture1`](omtp_lecture1/)
-
-Furthermore, several packages that provide *URDF* models, some in form of *xacro*, are also included so that these can be spawned in Gazebo. All of these packages were ported to ROS 2.
-- [`urdf_tutorial`](urdf_tutorial/)
-- [`omtp_support`](omtp_support/)
-- [`ur_description`](ur_description/)
-- [`abb_irb6640_support`](abb_irb6640_support/)
-- [`kinova_description`](kinova_description/)
-
-
-### ROS 2 Differences
-As this repository utilises ROS 2 Eloquent instead of a ROS 1 distribution, solving of the assignments has some differences. These are further documented [here](ros2_differences.md).
-
+## Assignments
+- [Assignment 1](assignment_1/) - URDF and XACRO
+- [Assignment 2](assignment_2/) - MoveIt Basics
+<!-- - [Assignment 3](assignment_3/) -->
 
 
 ## Installation
 The following installation instructions were tested with OS based on *Ubuntu 18.04 LTS (Bionic Beaver)*.
 
 ### Requirements
-
-#### 1) [ROS 2 Eloquent](https://index.ros.org/doc/ros2/Installation/Eloquent) with [Development Tools](https://index.ros.org/doc/ros2/Installation/Eloquent/Linux-Development-Setup/#install-development-tools-and-ros-tools)
-Feel free to follow the instructions or use the provided [installation script](scripts/install_ros2_distro_eloquent.bash).
-
-#### 2) [Gazebo](http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install) (tested with 9.12)
-```bash
-curl -sSL http://get.gazebosim.org | sh
-```
-
-#### 3) [Xacro (XML Macros)](https://github.com/ros/xacro/tree/dashing-devel)
-```bash
-sudo apt-get install -y ros-eloquent-xacro
-```
-
-#### 4) [MoveIt 2.0 Beta](https://github.com/ros-planning/moveit2)
-Feel free to follow the instructions or use the provided [installation script](scripts/install_ros2_moveit2.bash) (If desired, change the installation directory in the script).
+Please install the following either as Debian packages or build them from source.
+- [ROS 1 Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
+- [colcon](https://colcon.readthedocs.io/en/released/user/installation.html) or [catkin_tools](https://catkin-tools.readthedocs.io/en/latest/installing.html)
 
 ### Building
+If not a part of `~/.bashrc`, make sure to source the global ROS installation.
 ```bash
-git clone https://github.com/AndrejOrsula/omtp_course -b master && cd omtp_course
-source /opt/ros/eloquent/setup.bash
+source /opt/ros/melodic/setup.bash
+```
+
+Hereafter, you can clone this repository
+```bash
+mkdir -p awesome_ws/src && cd awesome_ws
+git clone https://github.com/AndrejOrsula/omtp_course -b master ./src/rob866_omtp_course
+```
+
+Install all other ROS dependencies
+```bash
+rosdep install --from-paths . --ignore-src --rosdistro ${ROS_DISTRO}
+```
+
+And finally build the packages of this repository with either `colcon` or `catkin`
+```bash
+# Colcon
 colcon build --symlink-install
+# Catkin
+catkin build
 ```
 
 
 ## Usage
-First, source the ROS 2 global installation (if not done before).
+If not a part of `~/.bashrc`, make sure to source the global ROS installation.
 ```bash
-source /opt/ros/eloquent/setup.bash
+source /opt/ros/melodic/setup.bash
 ```
 
-Then source the ROS 2 workspace overlay (if not done before).
+Then source the ROS workspace overlay (if not done before).
 ```bash
-source /path/to/omtp_course/install/local_setup.bash
+# Colcon
+source /path/to/awesome_ws/install/local_setup.bash
+# Catkin
+source /path/to/awesome_ws/devel/setup.bash
 ```
 
-Now you can run the assignments with the following launch scripts.
-```bash
-ros2 launch omtp_lecture1 omtp_factory.launch.py
-ros2 launch omtp_lecture1 r2d2.launch.py # This script requires path to be manually edited (eloquent bug)
-```
+Now you can try out the individual assignments, see their respective documentation for more info.
 
 
 ## Authors
