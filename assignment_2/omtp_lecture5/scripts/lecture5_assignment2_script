@@ -4,17 +4,10 @@
 
 
 use robot1
-go R1Up
 go R1Home
-go R1Pregrasp
-go up 0.1
+go R1PreGrasp
+go down 0.1
 go R1Place
-go R1Home
+go up 0.2
 
-use robot2
-go R2Up
-go R2Home
-go R2Pregrasp
-go up 0.1
-go R2Place
-go R2Home
+
