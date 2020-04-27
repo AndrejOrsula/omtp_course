@@ -258,3 +258,6 @@ install(TARGETS ${ros_logical_camera_plugin_name}
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
 )
+
+install(DIRECTORY config launch meshes models worlds
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

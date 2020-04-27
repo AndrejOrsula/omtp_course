@@ -17,8 +17,7 @@ def lecture5_assignment3():
     # Instantiate a MoveGroupCommander object.  This object is an interface
     # to one group of joints.  In this case the group refers to the joints of
     # robot2. This interface can be used to plan and execute motions on robot2.
-    robot2_group = moveit_commander.MoveGroupCommander(
-        "robot2")
+    robot2_group = moveit_commander.MoveGroupCommander("robot2")
 
     # Action clients to the ExecuteTrajectory action server.
     robot2_client = actionlib.SimpleActionClient('execute_trajectory',
@@ -83,7 +82,7 @@ def lecture5_assignment3():
     waypoints.append(new_robot2_eef_pose)
 
     rospy.loginfo('Cartesian path - Waypoint 1:')
-    print(new_robot2_eef_pose)
+    print(new_robot2_eef_pose.position)
 
     # Then go back to the pose where we started the linear motion from.
     waypoints.append(current_robot2_pose.pose)
