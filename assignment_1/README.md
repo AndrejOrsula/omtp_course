@@ -2,7 +2,7 @@
 
 This assignment provides examples of URDF and XACRO descriptions for use with ROS.
 
-> TODO: Add graphics
+![omtp_factory_modified](graphics/omtp_factory_modified.png)
 
 ## Usage
 Once build, this assignment can be executed with the following launch scripts.
