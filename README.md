@@ -67,7 +67,7 @@ Now you can try out the individual assignments, see their respective documentati
 
 
 ## Acknowledgment
-This repository contains several packages that were not developed by the authors of this project. The original authors of the ROS packages, which were ported to ROS 2, are listed under the corresponding `package.xml` manifests.
+This repository contains several packages that were not developed by the authors of this project. The original authors of the ROS packages are listed under the corresponding `package.xml` manifests.
 
 
 ## License
