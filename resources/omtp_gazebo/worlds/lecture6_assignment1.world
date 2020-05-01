@@ -16,9 +16,9 @@
              real_time_update_rate = 2000
            It gives a max of 4x real-time if your computer can handle it.
         -->
-      <real_time_factor>10</real_time_factor> <!-- 'max_step_size' * 'real_time_update_rate' sets an upper bound of real_time_factor -->
-      <max_step_size>0.001</max_step_size> <!-- The maximum time step size that can be taken by a variable time-step solver, default: 0.001 -->
-      <real_time_update_rate>2000</real_time_update_rate> <!-- The frequency at which the simulation time steps are advanced, default: 1000 Hz -->
+      <real_time_factor>10</real_time_factor>      <!-- 'max_step_size' * 'real_time_update_rate' sets an upper bound of real_time_factor -->
+      <max_step_size>0.001</max_step_size>      <!-- The maximum time step size that can be taken by a variable time-step solver, default: 0.001 -->
+      <real_time_update_rate>2000</real_time_update_rate>      <!-- The frequency at which the simulation time steps are advanced, default: 1000 Hz -->
     </physics>
 
     <!-- Disable shadows. -->
@@ -63,6 +63,15 @@
 
     <!-- Lecture 6 Assignment1 Part 1 -->
     <!-- Include the two logical camera models here -->
+    <include>
+      <uri>model://logical_camera1</uri>
+      <pose>1.2 1.8 2.0 0 1.5708 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://logical_camera2</uri>
+      <pose>-8.3 -1.23 1.8 0 1.5708 0</pose>
+    </include>
 
 
   </world>
