@@ -24,6 +24,30 @@
         <joint name="robot1_wrist_2_joint" value="0" />
         <joint name="robot1_wrist_3_joint" value="0" />
     </group_state>
+    <group_state name="R1Home" group="robot1">
+        <joint name="robot1_elbow_joint" value="1.5708" />
+        <joint name="robot1_shoulder_lift_joint" value="-1.5708" />
+        <joint name="robot1_shoulder_pan_joint" value="1.5708" />
+        <joint name="robot1_wrist_1_joint" value="-1.5708" />
+        <joint name="robot1_wrist_2_joint" value="-1.5708" />
+        <joint name="robot1_wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="R1PreGrasp" group="robot1">
+        <joint name="robot1_elbow_joint" value="1.5708" />
+        <joint name="robot1_shoulder_lift_joint" value="-1.5708" />
+        <joint name="robot1_shoulder_pan_joint" value="0.785398" />
+        <joint name="robot1_wrist_1_joint" value="-1.5708" />
+        <joint name="robot1_wrist_2_joint" value="-1.5708" />
+        <joint name="robot1_wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="R1Place" group="robot1">
+        <joint name="robot1_elbow_joint" value="1.5708" />
+        <joint name="robot1_shoulder_lift_joint" value="-1.5708" />
+        <joint name="robot1_shoulder_pan_joint" value="-1.5708" />
+        <joint name="robot1_wrist_1_joint" value="-1.5708" />
+        <joint name="robot1_wrist_2_joint" value="-1.5708" />
+        <joint name="robot1_wrist_3_joint" value="0" />
+    </group_state>
     <group_state name="R2Up" group="robot2">
         <joint name="robot2_elbow_joint" value="0" />
         <joint name="robot2_shoulder_lift_joint" value="-1.5708" />
@@ -32,52 +56,28 @@
         <joint name="robot2_wrist_2_joint" value="0" />
         <joint name="robot2_wrist_3_joint" value="0" />
     </group_state>
-    <group_state name="R1Home" group="robot1">
-        <joint name="robot1_elbow_joint" value="1.5708" />
-        <joint name="robot1_shoulder_lift_joint" value="-1.5707" />
-        <joint name="robot1_shoulder_pan_joint" value="1.5708" />
-        <joint name="robot1_wrist_1_joint" value="-1.5707" />
-        <joint name="robot1_wrist_2_joint" value="-1.5708" />
-        <joint name="robot1_wrist_3_joint" value="0" />
-    </group_state>
     <group_state name="R2Home" group="robot2">
         <joint name="robot2_elbow_joint" value="1.5708" />
         <joint name="robot2_shoulder_lift_joint" value="-1.5708" />
         <joint name="robot2_shoulder_pan_joint" value="1.5708" />
-        <joint name="robot2_wrist_1_joint" value="-1.5707" />
+        <joint name="robot2_wrist_1_joint" value="-1.5708" />
         <joint name="robot2_wrist_2_joint" value="-1.5708" />
         <joint name="robot2_wrist_3_joint" value="0" />
     </group_state>
-    <group_state name="R1PreGrasp" group="robot1">
-        <joint name="robot1_elbow_joint" value="2.0944" />
-        <joint name="robot1_shoulder_lift_joint" value="-1.0472" />
-        <joint name="robot1_shoulder_pan_joint" value="0" />
-        <joint name="robot1_wrist_1_joint" value="-2.61799" />
-        <joint name="robot1_wrist_2_joint" value="-1.5707" />
-        <joint name="robot1_wrist_3_joint" value="0" />
-    </group_state>
     <group_state name="R2PreGrasp" group="robot2">
         <joint name="robot2_elbow_joint" value="1.5708" />
-        <joint name="robot2_shoulder_lift_joint" value="-0.523599" />
-        <joint name="robot2_shoulder_pan_joint" value="2.79253" />
-        <joint name="robot2_wrist_1_joint" value="-2.61799" />
-        <joint name="robot2_wrist_2_joint" value="-1.5707" />
+        <joint name="robot2_shoulder_lift_joint" value="-1.5708" />
+        <joint name="robot2_shoulder_pan_joint" value="0.785398" />
+        <joint name="robot2_wrist_1_joint" value="-1.5708" />
+        <joint name="robot2_wrist_2_joint" value="-1.5708" />
         <joint name="robot2_wrist_3_joint" value="0" />
     </group_state>
-    <group_state name="R1Place" group="robot1">
-        <joint name="robot1_elbow_joint" value="2.0944" />
-        <joint name="robot1_shoulder_lift_joint" value="-1.0471" />
-        <joint name="robot1_shoulder_pan_joint" value="-1.5707" />
-        <joint name="robot1_wrist_1_joint" value="-2.61799" />
-        <joint name="robot1_wrist_2_joint" value="-1.5707" />
-        <joint name="robot1_wrist_3_joint" value="0" />
-    </group_state>
     <group_state name="R2Place" group="robot2">
-        <joint name="robot2_elbow_joint" value="1.5708" />
-        <joint name="robot2_shoulder_lift_joint" value="-0.5235" />
-        <joint name="robot2_shoulder_pan_joint" value="0" />
-        <joint name="robot2_wrist_1_joint" value="-2.61799" />
-        <joint name="robot2_wrist_2_joint" value="-1.5707" />
+        <joint name="robot2_elbow_joint" value="0.7512" />
+        <joint name="robot2_shoulder_lift_joint" value="-1.161" />
+        <joint name="robot2_shoulder_pan_joint" value="2.5952" />
+        <joint name="robot2_wrist_1_joint" value="-1.2293" />
+        <joint name="robot2_wrist_2_joint" value="-1.5708" />
         <joint name="robot2_wrist_3_joint" value="0" />
     </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
@@ -117,6 +117,7 @@
     <disable_collisions link1="break_beam_base_link" link2="robot2_wrist_1_link" reason="Never" />
     <disable_collisions link1="break_beam_base_link" link2="robot2_wrist_2_link" reason="Never" />
     <disable_collisions link1="break_beam_base_link" link2="robot2_wrist_3_link" reason="Never" />
+    <disable_collisions link1="break_beam_base_link" link2="vacuum_gripper1_suction_cup" reason="Never" />
     <disable_collisions link1="break_beam_base_link" link2="vacuum_gripper2_base_link" reason="Never" />
     <disable_collisions link1="break_beam_base_link" link2="vacuum_gripper2_suction_cup" reason="Never" />
     <disable_collisions link1="break_beam_base_link" link2="workcell" reason="Adjacent" />
@@ -134,6 +135,7 @@
     <disable_collisions link1="logical_camera1_base_link" link2="robot2_wrist_1_link" reason="Never" />
     <disable_collisions link1="logical_camera1_base_link" link2="robot2_wrist_2_link" reason="Never" />
     <disable_collisions link1="logical_camera1_base_link" link2="robot2_wrist_3_link" reason="Never" />
+    <disable_collisions link1="logical_camera1_base_link" link2="vacuum_gripper1_suction_cup" reason="Never" />
     <disable_collisions link1="logical_camera1_base_link" link2="vacuum_gripper2_base_link" reason="Never" />
     <disable_collisions link1="logical_camera1_base_link" link2="vacuum_gripper2_suction_cup" reason="Never" />
     <disable_collisions link1="logical_camera1_base_link" link2="workcell" reason="Adjacent" />
