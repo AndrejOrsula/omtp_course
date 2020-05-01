@@ -1,3 +1,5 @@
-# Lecture 6 - Perception and Grasping
+# Lecture 6 - Object Detection and Grasping
 
-TODO
+This lecture provides examples of detecting and grasping objects in Gazebo with the use of logical camera.
+
+![tf_tree](graphics/tf_tree.png)
