@@ -5,9 +5,9 @@ This repository contains assignment of group ROB866 for *Object Manipulation and
 
 
 ## Assignments
-- [Assignment 1](assignment_1/) - URDF and XACRO
-- [Assignment 2](assignment_2/) - MoveIt Basics
-<!-- - [Assignment 3](assignment_3/) -->
+- [lecture 1](lecture_1/) - URDF and XACRO
+- [lecture 5](lecture_5/) - MoveIt Basics
+<!-- - [lecture 6](lecture_6/) - Perception and Grasping -->
 
 
 ## Installation

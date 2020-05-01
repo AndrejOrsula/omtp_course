@@ -1,6 +1,6 @@
-# Assignment 2 - MoveIt Basics
+# Lecture 5 - MoveIt Basics
 
-This assignment provides example of basic manipulation with MoveIt.
+This lecture provides example of basic manipulation with MoveIt.
 
 ![gazebo_robot2](graphics/gazebo_robot2.gif)
 
@@ -10,7 +10,7 @@ roslaunch moveit_setup_assistant setup_assistant.launch
 ```
 
 ## Usage
-Once build, this assignment can be executed with the following instructions.
+Once build, the assignments can be executed with the following instructions.
 
 First, setup the OMTP factory environment either in virual RViz or Gazebo.
 ```bash
