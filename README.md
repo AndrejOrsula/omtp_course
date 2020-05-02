@@ -65,6 +65,7 @@ Now you can try out the individual assignments, see their respective documentati
 - Andrej Orsula
 - Asger Printz Madsen
 
+VS Code's [Live Share extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) was utilised during some of the development, where the specific commits contain a co-author.
 
 ## Acknowledgment
 This repository contains several packages that were not developed by the authors of this project. The original authors of the ROS packages are listed under the corresponding `package.xml` manifests.
