@@ -9,6 +9,8 @@ This lecture provides examples of detecting and grasping objects in Gazebo with 
 Once build, the assignments can be executed, within the simulation tool Gazebo, with the following instructions.
 
 ```bash
+# Assignment 1 - Add and configure logical cameras
+roslaunch omtp_lecture6 lecture6_assignment1.launch
 # Assignment 3 - Transform object pose
 roslaunch omtp_lecture6 lecture6_assignment3.launch
 rosrun omtp_lecture6 lecture6_assignment3.py 
