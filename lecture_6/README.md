@@ -17,7 +17,7 @@ roslaunch omtp_lecture6 lecture6_assignment3.launch
 roslaunch omtp_lecture6 lecture6_assignment4.launch
 ```
 
-### Generated TF tree structure
+### Generated TF structure
 The following TF tree for assignment 2 was created with the following command.
 ```bash
 rosrun tf view_frames
