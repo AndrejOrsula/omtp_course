@@ -8,6 +8,7 @@ This repository contains assignment of group ROB866 for *Object Manipulation and
 - [lecture 1](lecture_1/) - URDF and XACRO
 - [lecture 5](lecture_5/) - MoveIt Basics
 - [lecture 6](lecture_6/) - Object Detection and Grasping
+- [lecture 7](lecture_7/) - Behavior Design with State Machines
 
 
 ## Installation

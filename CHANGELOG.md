@@ -7,16 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [X.X.X] - 202X-XX-XX
 
 
+## [1.3.0] - 2020-05-07
+### Added
+- Resources for lecture 7
+
+## [1.2.0] - 2020-05-02
+### Added
+- Resources for lecture 6
+- Solutions for lecture 6
+
 ## [1.1.0] - 2020-04-27
 ### Added
-- Solutions for assignment 2
+- Solutions for lecture 5
 
 ## [1.0.0] - 2020-04-23
 ### Changed - Breaking
 - Reverted back to ROS 1 Melodic due to missing MoveIt2 features that have not yet been migrated.
-- Ported assignment 1 to ROS 1
+- Ported lecture 1 to ROS 1
 ### Added
-- Added resources for assignment 2
+- Added resources for lecture 5
 
 ## [0.2.0] - 2020-03-10
 ### Added
