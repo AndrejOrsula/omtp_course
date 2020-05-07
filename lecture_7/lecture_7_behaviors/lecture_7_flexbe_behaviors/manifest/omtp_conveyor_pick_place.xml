@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="omtp_conveyor_pick_place">
+
+	<executable package_path="lecture_7_flexbe_behaviors.omtp_conveyor_pick_place_sm" class="omtp_conveyor_pick_placeSM" />
+	<tagstring>omtp, conveyor</tagstring>
+	<author>Andrej Orsula</author>
+	<author>Asger P. Madsen</author>
+	<date>Thu May 07 2020</date>
+	<description>
+		Pick a part from conveyor and place in a bin
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+
+</behavior>
