@@ -64,7 +64,12 @@ Now you can try out the individual assignments, see their respective documentati
 
 ## Authors
 - Andrej Orsula
+
+![face_mask_andrej](lecture_8/graphics/face_mask_andrej.gif)
+
 - Asger Printz Madsen
+
+<!-- ![face_mask_asger](lecture_8/graphics/face_mask_asger.gif) -->
 
 VS Code's [Live Share extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) was utilised during some of the development, where the specific commits contain a co-author.
 
