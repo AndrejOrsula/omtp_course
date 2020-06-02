@@ -9,7 +9,8 @@ This repository contains assignment of group ROB866 for *Object Manipulation and
 - [lecture 5](lecture_5/) - MoveIt Basics
 - [lecture 6](lecture_6/) - Object Detection and Grasping
 - [lecture 7](lecture_7/) - Behavior Design with State Machines
-
+- [lecture 8](lecture_8/) - CNNs in Practical Robotic Applications (see Authors below)
+<!-- - [lecture 9](lecture_9/) - Deep Reinforcement Learning for Robot Control -->
 
 ## Installation
 The following installation instructions were tested with OS based on *Ubuntu 18.04 LTS (Bionic Beaver)*.
