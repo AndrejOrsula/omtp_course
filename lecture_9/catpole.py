@@ -33,7 +33,7 @@ if __name__ == '__main__':
     # env = make_vec_env(env_id, n_envs=num_cpu, seed=0)
 
     model = ACKTR(MlpPolicy, env, verbose=1, tensorboard_log="./a2c_cartpole_tensorboard/")
-    model.learn(total_timesteps=25000)
+    model.learn(total_timesteps=250000)
 
     obs = env.reset()
     for _ in range(1000):
