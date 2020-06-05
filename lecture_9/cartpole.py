@@ -6,6 +6,7 @@ from stable_baselines.common.vec_env import SubprocVecEnv
 from stable_baselines.common import set_global_seeds, make_vec_env
 from stable_baselines import ACKTR
 
+
 def make_env(env_id, rank, seed=0):
     """
     Utility function for multiprocessed env.
@@ -22,6 +23,7 @@ def make_env(env_id, rank, seed=0):
     set_global_seeds(seed)
     return _init
 
+
 if __name__ == '__main__':
     env_id = "CartPole-v1"
     num_cpu = 4  # Number of processes to use
@@ -32,7 +34,8 @@ if __name__ == '__main__':
     # which does exactly the previous steps for you:
     # env = make_vec_env(env_id, n_envs=num_cpu, seed=0)
 
-    model = ACKTR(MlpPolicy, env, verbose=1, tensorboard_log="./a2c_cartpole_tensorboard/")
+    model = ACKTR(MlpPolicy, env, verbose=1,
+                  tensorboard_log="./a2c_cartpole_tensorboard/")
     model.learn(total_timesteps=250000)
 
     obs = env.reset()
