@@ -9,8 +9,8 @@ This repository contains assignment of group ROB866 for *Object Manipulation and
 - [lecture 5](lecture_5/) - MoveIt Basics
 - [lecture 6](lecture_6/) - Object Detection and Grasping
 - [lecture 7](lecture_7/) - Behavior Design with State Machines
-- [lecture 8](lecture_8/) - CNNs in Practical Robotic Applications (see Authors below)
-<!-- - [lecture 9](lecture_9/) - Deep Reinforcement Learning for Robot Control -->
+- [lecture 8](lecture_8/) - CNNs in Practical Robotic Applications
+- [lecture 9](lecture_9/) - Deep Reinforcement Learning for Robot Control
 
 ## Installation
 The following installation instructions were tested with OS based on *Ubuntu 18.04 LTS (Bionic Beaver)*.
@@ -65,12 +65,7 @@ Now you can try out the individual assignments, see their respective documentati
 
 ## Authors
 - Andrej Orsula
-
-![face_mask_andrej](lecture_8/graphics/face_mask_andrej.gif)
-
 - Asger Printz Madsen
-
-<!-- ![face_mask_asger](lecture_8/graphics/face_mask_asger.gif) -->
 
 VS Code's [Live Share extension](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) was utilised during some of the development, where the specific commits contain a co-author.
 
