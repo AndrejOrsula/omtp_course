@@ -4,8 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [X.X.X] - 202X-XX-XX
+## [1.5.0] - 2020-06-05
+### Added
+- Solution for lecture 8
+- Solution for lecture 9
 
+## [1.4.0] - 2020-06-04
+### Added
+- Solution for lecture 7
 
 ## [1.3.0] - 2020-05-07
 ### Added
